@@ -1,0 +1,15 @@
+@keyframes ken-burns {
+  0% {
+    transform: scale(1) translate(0);
+  }
+  50% {
+    transform: scale(1.2) translate(-2%, -2%);
+  }
+  100% {
+    transform: scale(1) translate(0);
+  }
+}
+
+.animate-ken-burns {
+  animation: ken-burns 20s ease-in-out infinite;
+}

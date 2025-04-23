@@ -1,0 +1,123 @@
+.payment-history-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.payment-history-container h2 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.payments-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.payment-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.payment-card:hover {
+  transform: translateY(-2px);
+}
+
+.payment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.payment-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.status.completed {
+  background-color: #e6f4ea;
+  color: #137333;
+}
+
+.status.pending {
+  background-color: #fef7e0;
+  color: #b06000;
+}
+
+.status.refunded {
+  background-color: #fce8e6;
+  color: #c5221f;
+}
+
+.payment-details {
+  margin-bottom: 1rem;
+}
+
+.payment-details p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.payment-details strong {
+  color: #333;
+  margin-right: 0.5rem;
+}
+
+.refund-button {
+  background-color: #f8f9fa;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.refund-button:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #dc3545;
+}
+
+.no-payments {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .payment-history-container {
+    padding: 1rem;
+  }
+
+  .payments-list {
+    grid-template-columns: 1fr;
+  }
+} 
