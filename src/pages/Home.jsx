@@ -6,6 +6,8 @@ import { useAuth } from '../contexts/AuthContext';
 const Home = () => {
   const { user } = useAuth();
 
+
+  
   const features = [
     {
       icon: <Calendar className="w-6 h-6 text-purple-500" />,
