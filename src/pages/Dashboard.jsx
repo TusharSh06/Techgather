@@ -5,6 +5,7 @@ import OrganizerDashboard from '../components/dashboard/OrganizerDashboard';
 import VendorDashboard from '../components/dashboard/VendorDashboard';
 import AdminDashboard from '../components/dashboard/AdminDashboard';
 
+
 const Dashboard = () => {
   const { user, roles } = useAuth();
 
@@ -36,5 +37,6 @@ const Dashboard = () => {
     </div>
   );
 };
+
 
 export default Dashboard; 
